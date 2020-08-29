@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Douglas Dunkle Portfolio</title>
+    <!-- These are the two stylesheets. The first is directly from bootstrap, and the second is my personal systle sheet. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/style.css" type="text/css">
   </head>
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand">Douglas Dunkle</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse justify-content-end mr-auto ml-auto" id="navbarSupportedContent" >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">Douglas Dunkle</a>
+  <!-- This is for the Nav bar to collapse when viewed on a small screen. It also requires the scripts below in order to function -->
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- These are the three nav options for the page -->
+  <div class="collapse navbar-collapse justify-content-end mr-auto ml-auto" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <!-- This is the active page -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
+  <!-- This will create the about me section. -->
     <section class="padding1 container container-md">
       <div class="card cardcolor1">
         <header class="card cardcolor1" style="width: 100%">
@@ -39,32 +44,34 @@
         <div class="card-body">
           <div class="row no-gutters">
             <div class="col-md-2">
-              <!-- <img src="Assets/Images/BGSU.png" class="card-img-top img-fluidround" height: auto; alt="About me picture"> -->
+            <!-- Image of the page. It should be sized smaller on a smaller device. -->
               <img src="Assets/Images/BGSU.png" class="card-img-top img-fluidround rounded float-left" height: auto; alt="About me picture">
             </div>
             <div class="col-md-10 padding2">
-              <p class="padding2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, eveniet. Corporis nihil similique odio laborum id laudantium, blanditiis libero omnis quo nisi, quae atque vero suscipit. Nulla optio vitae ipsum.</p>
-              <p class="padding2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere quia reiciendis necessitatibus ad praesentium, eaque quam totam quisquam fugit libero minima. Eaque, corporis voluptatum? Nemo reprehenderit architecto sed repellendus?</p>
+              <!-- This is the main content of the page. It is bold here rather than through the style sheet -->
+              <p class="padding2"><strong>I grew up in a small town in NW Ohio. After graduating from Bowling Green State University, I moved to Maryland and taught high school math for 10 year. My focus was in Geometry and Calculus. I then joined a small mortgage company where I have been for the past 5 years.</strong></p>
+              <p class="padding2"><strong>My goal is to learn full stack development so that I can assist my company and modernize our workflow. While my end goal is not to be the person doing the development, I am trying to learn more about the process so that I can have a better working understanding of what the development entails.</strong></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script
+  <!-- These scripts are needed in order for the collapsing of the Nav bar. -->
+  <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous">
+  </script>
   <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous">
+  </script>
   <script
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous">
+  </script>
 </body>
 </html>
