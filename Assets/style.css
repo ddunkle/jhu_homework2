@@ -1,3 +1,21 @@
 body {
-    background-color: blue;
+    background-color: bisque;
+}
+
+.cardcolor1 {
+    background-color: cadetblue;
+}
+
+.cardfont1 {
+    color: white;
+    font: bold;
+    font-size: larger;
+}
+
+.padding1 {
+    padding-top: 5%;
+}
+
+.padding2 {
+    padding-left: 5%;
 }
